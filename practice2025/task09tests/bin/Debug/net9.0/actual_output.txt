@@ -1,0 +1,137 @@
+Class: DisplayNameAttribute
+Method:
+get_DisplayName
+Method:
+Equals
+Parameters:
+Object obj
+Method:
+GetHashCode
+Method:
+get_TypeId
+Method:
+Match
+Parameters:
+Object obj
+Method:
+IsDefaultAttribute
+Method:
+GetType
+Method:
+ToString
+Attributes:
+NullableContextAttribute
+NullableAttribute
+AttributeUsageAttribute
+Constructors:
+.ctor
+Parameters:
+String name
+
+Class: VersionAttribute
+Method:
+get_Major
+Method:
+get_Minor
+Method:
+Equals
+Parameters:
+Object obj
+Method:
+GetHashCode
+Method:
+get_TypeId
+Method:
+Match
+Parameters:
+Object obj
+Method:
+IsDefaultAttribute
+Method:
+GetType
+Method:
+ToString
+Attributes:
+AttributeUsageAttribute
+Constructors:
+.ctor
+Parameters:
+Int32 major
+Int32 minor
+
+Class: SampleClass
+Method:
+TestMethod
+Method:
+get_Number
+Method:
+set_Number
+Parameters:
+String value
+Method:
+GetType
+Method:
+ToString
+Method:
+Equals
+Parameters:
+Object obj
+Method:
+GetHashCode
+Attributes:
+NullableContextAttribute
+NullableAttribute
+VersionAttribute
+DisplayNameAttribute
+Constructors:
+.ctor
+
+Class: ReflectionHelper
+Method:
+PrintTypeInfo
+Parameters:
+Type type
+Method:
+GetType
+Method:
+ToString
+Method:
+Equals
+Parameters:
+Object obj
+Method:
+GetHashCode
+
+Class: <>c
+Method:
+GetType
+Method:
+ToString
+Method:
+Equals
+Parameters:
+Object obj
+Method:
+GetHashCode
+Attributes:
+SerializableAttribute
+CompilerGeneratedAttribute
+Constructors:
+.ctor
+
+Class: <>c__DisplayClass0_0
+Method:
+GetType
+Method:
+ToString
+Method:
+Equals
+Parameters:
+Object obj
+Method:
+GetHashCode
+Attributes:
+CompilerGeneratedAttribute
+Constructors:
+.ctor
+
