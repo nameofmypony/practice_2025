@@ -1,0 +1,137 @@
+Класс: DisplayNameAttribute
+Метод:
+get_DisplayName
+Метод:
+Equals
+Параметры метода и их тип:
+obj Object
+Метод:
+GetHashCode
+Метод:
+get_TypeId
+Метод:
+Match
+Параметры метода и их тип:
+obj Object
+Метод:
+IsDefaultAttribute
+Метод:
+GetType
+Метод:
+ToString
+Атрибуты:
+NullableContextAttribute
+NullableAttribute
+AttributeUsageAttribute
+Конструкторы:
+.ctor
+Параметры конструктора и их тип:
+name String
+
+Класс: ReflectionHelper
+Метод:
+PrintTypeInfo
+Параметры метода и их тип:
+type Type
+Метод:
+GetType
+Метод:
+ToString
+Метод:
+Equals
+Параметры метода и их тип:
+obj Object
+Метод:
+GetHashCode
+
+Класс: SampleClass
+Метод:
+TestMethod
+Метод:
+get_Number
+Метод:
+set_Number
+Параметры метода и их тип:
+value String
+Метод:
+GetType
+Метод:
+ToString
+Метод:
+Equals
+Параметры метода и их тип:
+obj Object
+Метод:
+GetHashCode
+Атрибуты:
+NullableContextAttribute
+NullableAttribute
+VersionAttribute
+DisplayNameAttribute
+Конструкторы:
+.ctor
+
+Класс: VersionAttribute
+Метод:
+get_Major
+Метод:
+get_Minor
+Метод:
+Equals
+Параметры метода и их тип:
+obj Object
+Метод:
+GetHashCode
+Метод:
+get_TypeId
+Метод:
+Match
+Параметры метода и их тип:
+obj Object
+Метод:
+IsDefaultAttribute
+Метод:
+GetType
+Метод:
+ToString
+Атрибуты:
+AttributeUsageAttribute
+Конструкторы:
+.ctor
+Параметры конструктора и их тип:
+major Int32
+minor Int32
+
+Класс: <>c
+Метод:
+GetType
+Метод:
+ToString
+Метод:
+Equals
+Параметры метода и их тип:
+obj Object
+Метод:
+GetHashCode
+Атрибуты:
+SerializableAttribute
+CompilerGeneratedAttribute
+Конструкторы:
+.ctor
+
+Класс: <>c__DisplayClass0_0
+Метод:
+GetType
+Метод:
+ToString
+Метод:
+Equals
+Параметры метода и их тип:
+obj Object
+Метод:
+GetHashCode
+Атрибуты:
+CompilerGeneratedAttribute
+Конструкторы:
+.ctor
+
