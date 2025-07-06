@@ -8,10 +8,11 @@ public class DllAnalyzerTests
     public void ConsoleDllAnalyzer_HasExpectedPrint()
     {
         var baseDir = AppContext.BaseDirectory;
-        var exePath = Path.Combine(baseDir, "../../../../task09/bin/Debug/net9.0/task09.exe");
+        var solutionDir = Path.GetFullPath(Path.Combine(baseDir, "../../../../"));
         
-        var projectPath = Path.GetFullPath(Path.Combine(baseDir, "../../../../task07/bin/Debug/net9.0/task07.dll"));
-        
+        var projectPath = Path.Combine(solutionDir, "task09/task09.csproj");
+        var dllPath = Path.Combine(solutionDir, "task07/bin/Debug/net9.0/task07.dll");
+
         string expected = "Class: DisplayNameAttribute\r\n" +
       "Method:\r\n" +
       "get_DisplayName\r\n" +
@@ -147,9 +148,12 @@ public class DllAnalyzerTests
         
         var startInfo = new ProcessStartInfo
         {
-            FileName = exePath,
-            Arguments = $"\"{projectPath}\"",
+            FileName = "dotnet",
+            Arguments = $"run --project \"{projectPath}\" -- \"{dllPath}\"",
             RedirectStandardOutput = true,
+            UseShellExecute = false,
+            CreateNoWindow = true,
+            WorkingDirectory = solutionDir
         };
 
         using var process = new Process();
