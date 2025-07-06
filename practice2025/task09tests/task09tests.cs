@@ -13,138 +13,138 @@ public class DllAnalyzerTests
         var projectPath = Path.Combine(solutionDir, "task09/task09.csproj");
         var dllPath = Path.Combine(solutionDir, "task07/bin/Debug/net9.0/task07.dll");
 
-        string expected = "Class: DisplayNameAttribute\r\n" +
-      "Method:\r\n" +
-      "get_DisplayName\r\n" +
-      "Method:\r\n" +
-      "Equals\r\n" +
-      "Parameters:\r\n" +
-      "Object obj\r\n" +
-      "Method:\r\n" +
-      "GetHashCode\r\n" +
-      "Method:\r\n" +
-      "get_TypeId\r\n" +
-      "Method:\r\n" +
-      "Match\r\n" +
-      "Parameters:\r\n" +
-      "Object obj\r\n" +
-      "Method:\r\n" +
-      "IsDefaultAttribute\r\n" +
-      "Method:\r\n" +
-      "GetType\r\n" +
-      "Method:\r\n" +
-      "ToString\r\n" +
-      "Attributes:\r\n" +
-      "NullableContextAttribute\r\n" +
-      "NullableAttribute\r\n" +
-      "AttributeUsageAttribute\r\n" +
-      "Constructors:\r\n" +
-      ".ctor\r\n" +
-      "Parameters:\r\n" +
-      "String name\r\n\r\n" +
-      "Class: VersionAttribute\r\n" +
-      "Method:\r\n" +
-      "get_Major\r\n" +
-      "Method:\r\n" +
-      "get_Minor\r\n" +
-      "Method:\r\n" +
-      "Equals\r\n" +
-      "Parameters:\r\n" +
-      "Object obj\r\n" +
-      "Method:\r\n" +
-      "GetHashCode\r\n" +
-      "Method:\r\n" +
-      "get_TypeId\r\n" +
-      "Method:\r\n" +
-      "Match\r\n" +
-      "Parameters:\r\n" +
-      "Object obj\r\n" +
-      "Method:\r\n" +
-      "IsDefaultAttribute\r\n" +
-      "Method:\r\n" +
-      "GetType\r\n" +
-      "Method:\r\n" +
-      "ToString\r\n" +
-      "Attributes:\r\n" +
-      "AttributeUsageAttribute\r\n" +
-      "Constructors:\r\n" +
-      ".ctor\r\n" +
-      "Parameters:\r\n" +
-      "Int32 major\r\n" +
-      "Int32 minor\r\n\r\n" +
-      "Class: SampleClass\r\n" +
-      "Method:\r\n" +
-      "TestMethod\r\n" +
-      "Method:\r\n" +
-      "get_Number\r\n" +
-      "Method:\r\n" +
-      "set_Number\r\n" +
-      "Parameters:\r\n" +
-      "String value\r\n" +
-      "Method:\r\n" +
-      "GetType\r\n" +
-      "Method:\r\n" +
-      "ToString\r\n" +
-      "Method:\r\n" +
-      "Equals\r\n" +
-      "Parameters:\r\n" +
-      "Object obj\r\n" +
-      "Method:\r\n" +
-      "GetHashCode\r\n" +
-      "Attributes:\r\n" +
-      "NullableContextAttribute\r\n" +
-      "NullableAttribute\r\n" +
-      "VersionAttribute\r\n" +
-      "DisplayNameAttribute\r\n" +
-      "Constructors:\r\n" +
-      ".ctor\r\n\r\n" +
-      "Class: ReflectionHelper\r\n" +
-      "Method:\r\n" +
-      "PrintTypeInfo\r\n" +
-      "Parameters:\r\n" +
-      "Type type\r\n" +
-      "Method:\r\n" +
-      "GetType\r\n" +
-      "Method:\r\n" +
-      "ToString\r\n" +
-      "Method:\r\n" +
-      "Equals\r\n" +
-      "Parameters:\r\n" +
-      "Object obj\r\n" +
-      "Method:\r\n" +
-      "GetHashCode\r\n\r\n" +
-      "Class: <>c\r\n" +
-      "Method:\r\n" +
-      "GetType\r\n" +
-      "Method:\r\n" +
-      "ToString\r\n" +
-      "Method:\r\n" +
-      "Equals\r\n" +
-      "Parameters:\r\n" +
-      "Object obj\r\n" +
-      "Method:\r\n" +
-      "GetHashCode\r\n" +
-      "Attributes:\r\n" +
-      "SerializableAttribute\r\n" +
-      "CompilerGeneratedAttribute\r\n" +
-      "Constructors:\r\n" +
-      ".ctor\r\n\r\n" +
-      "Class: <>c__DisplayClass0_0\r\n" +
-      "Method:\r\n" +
-      "GetType\r\n" +
-      "Method:\r\n" +
-      "ToString\r\n" +
-      "Method:\r\n" +
-      "Equals\r\n" +
-      "Parameters:\r\n" +
-      "Object obj\r\n" +
-      "Method:\r\n" +
-      "GetHashCode\r\n" +
-      "Attributes:\r\n" +
-      "CompilerGeneratedAttribute\r\n" +
-      "Constructors:\r\n" +
-      ".ctor\r\n" +
-      "\r\n";
+        string expected = "Class: DisplayNameAttribute\n" +
+      "Method:\n" +
+      "get_DisplayName\n" +
+      "Method:\n" +
+      "Equals\n" +
+      "Parameters:\n" +
+      "Object obj\n" +
+      "Method:\n" +
+      "GetHashCode\n" +
+      "Method:\n" +
+      "get_TypeId\n" +
+      "Method:\n" +
+      "Match\n" +
+      "Parameters:\n" +
+      "Object obj\n" +
+      "Method:\n" +
+      "IsDefaultAttribute\n" +
+      "Method:\n" +
+      "GetType\n" +
+      "Method:\n" +
+      "ToString\n" +
+      "Attributes:\n" +
+      "NullableContextAttribute\n" +
+      "NullableAttribute\n" +
+      "AttributeUsageAttribute\n" +
+      "Constructors:\n" +
+      ".ctor\n" +
+      "Parameters:\n" +
+      "String name\n\n" +
+      "Class: VersionAttribute\n" +
+      "Method:\n" +
+      "get_Major\n" +
+      "Method:\n" +
+      "get_Minor\n" +
+      "Method:\n" +
+      "Equals\n" +
+      "Parameters:\n" +
+      "Object obj\n" +
+      "Method:\n" +
+      "GetHashCode\n" +
+      "Method:\n" +
+      "get_TypeId\n" +
+      "Method:\n" +
+      "Match\n" +
+      "Parameters:\n" +
+      "Object obj\n" +
+      "Method:\n" +
+      "IsDefaultAttribute\n" +
+      "Method:\n" +
+      "GetType\n" +
+      "Method:\n" +
+      "ToString\n" +
+      "Attributes:\n" +
+      "AttributeUsageAttribute\n" +
+      "Constructors:\n" +
+      ".ctor\n" +
+      "Parameters:\n" +
+      "Int32 major\n" +
+      "Int32 minor\n\n" +
+      "Class: SampleClass\n" +
+      "Method:\n" +
+      "TestMethod\n" +
+      "Method:\n" +
+      "get_Number\n" +
+      "Method:\n" +
+      "set_Number\n" +
+      "Parameters:\n" +
+      "String value\n" +
+      "Method:\n" +
+      "GetType\n" +
+      "Method:\n" +
+      "ToString\n" +
+      "Method:\n" +
+      "Equals\n" +
+      "Parameters:\n" +
+      "Object obj\n" +
+      "Method:\n" +
+      "GetHashCode\n" +
+      "Attributes:\n" +
+      "NullableContextAttribute\n" +
+      "NullableAttribute\n" +
+      "VersionAttribute\n" +
+      "DisplayNameAttribute\n" +
+      "Constructors:\n" +
+      ".ctor\n\n" +
+      "Class: ReflectionHelper\n" +
+      "Method:\n" +
+      "PrintTypeInfo\n" +
+      "Parameters:\n" +
+      "Type type\n" +
+      "Method:\n" +
+      "GetType\n" +
+      "Method:\n" +
+      "ToString\n" +
+      "Method:\n" +
+      "Equals\n" +
+      "Parameters:\n" +
+      "Object obj\n" +
+      "Method:\n" +
+      "GetHashCode\n\n" +
+      "Class: <>c\n" +
+      "Method:\n" +
+      "GetType\n" +
+      "Method:\n" +
+      "ToString\n" +
+      "Method:\n" +
+      "Equals\n" +
+      "Parameters:\n" +
+      "Object obj\n" +
+      "Method:\n" +
+      "GetHashCode\n" +
+      "Attributes:\n" +
+      "SerializableAttribute\n" +
+      "CompilerGeneratedAttribute\n" +
+      "Constructors:\n" +
+      ".ctor\n\n" +
+      "Class: <>c__DisplayClass0_0\n" +
+      "Method:\n" +
+      "GetType\n" +
+      "Method:\n" +
+      "ToString\n" +
+      "Method:\n" +
+      "Equals\n" +
+      "Parameters:\n" +
+      "Object obj\n" +
+      "Method:\n" +
+      "GetHashCode\n" +
+      "Attributes:\n" +
+      "CompilerGeneratedAttribute\n" +
+      "Constructors:\n" +
+      ".ctor\n" +
+      "\n";
         
         var startInfo = new ProcessStartInfo
         {
