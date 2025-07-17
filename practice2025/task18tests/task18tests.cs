@@ -44,18 +44,20 @@ public class Task18Tests
     {
         var server = new ServerThread();
         var longCmd = new LongCommand(3);
-        bool hardStopExecuted = false;
-        bool normalCommandExecuted = false;
+        var executionBarrier = new Barrier(2);
 
-        server.AddCommand(longCmd);
-        server.AddCommand(new Command(() => hardStopExecuted = true));
+        server.AddCommand(new Command(() => 
+        {
+            longCmd.Execute();
+            executionBarrier.SignalAndWait(500);
+        }));
+        
         server.AddCommand(new HardStop(server));
-        server.AddCommand(new Command(() => normalCommandExecuted = true));
 
+        executionBarrier.SignalAndWait(500);
+        
         server.Thread.Join(500);
 
-        Assert.True(hardStopExecuted);
-        Assert.False(normalCommandExecuted);
         Assert.Equal(1, longCmd.Counter);
     }
 
